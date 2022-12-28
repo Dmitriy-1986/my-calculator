@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Калькулятор</h2>
+
+        <form action="" id="calc_form">
+            <label for="first_input">Выбрать действие:</label>
+            <input list="action_list" id="select_action" class="select-action" placeholder="Действие" required>
+            <datalist id="action_list">
+                <option value="+">
+                <option value="-">
+                <option value="*">
+                <option value="/">
+            </datalist>
+
+            <label for="first_input">Первое поле:</label>
+            <input type="text" id="first_input" placeholder="Значение 1" required>
+
+            <label for="second_input">Второе поле:</label>
+            <input type="text" id="second_input" placeholder="Значение 2" required>
+
+            <button id="btn">Отправить</button>
+        </form>
+        <p id="result"></p>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
